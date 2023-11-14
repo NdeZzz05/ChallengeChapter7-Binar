@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="w-screen h-screen flex justify-center items-center overflow-x-hidden">
+        <h1
+          className="sm:text-6xl text-2xl text-center font-bold"
+          style={{
+            backgroundImage: "radial-gradient(at center bottom, rgb(253, 230, 138), rgb(124, 58, 237), rgb(12, 74, 110))",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Muhammad Fernandes
+        </h1>
+      </div>
+    </>
   );
-}
-
-export default App;
+};
